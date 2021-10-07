@@ -54,9 +54,10 @@ a {
 #welcome-section {
   background: linear-gradient(
     to top,
-    rgb(27, 172, 216),
+    #a4dede,
     30%,
-    #a4dede
+    #fcadff
+  
   );
   height: 100vh;
   width: 100vw;
@@ -67,13 +68,18 @@ a {
   font-size: 3rem;
 }
 
+#welcome-section h3 {
+  font-size: 2rem;
+}
+
 #projects {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
   align-items: center;
   padding: 3rem 0;
-  background-color: rgb(127, 255, 249);
+  background-color: #FCADFF;
 }
 
 #projects h3 {
@@ -101,6 +107,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 320px;
   background-color: #a4dede;
   font-size: 2rem;
@@ -109,7 +116,7 @@ a {
 #contact h1,
 h4 {
   padding-bottom: 2rem;
-  color: #0c0c0c;
+  color: #000000;
 }
 
 #contact div {
@@ -119,13 +126,13 @@ h4 {
 
 #contact div a {
   padding: 2rem;
-  color: #f2f1df;
+  color: #ffffff;
   text-shadow: 4px 4px 4px #1f1f1f;
   transition: transform 0.3s linear;
 }
 
 #contact div a:hover {
-  transform: translateY(8px);
+  transform: translateY(7px);
 }
 
 footer {
