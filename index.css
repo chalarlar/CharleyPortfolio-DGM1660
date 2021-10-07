@@ -26,7 +26,7 @@ html {
 #navbar {
   width: 100%;
   position: fixed;
-  background-color: #86b6b6;
+  background-color: #a4dede;
 }
 
 .nav-list {
@@ -38,13 +38,14 @@ html {
 
 .nav-list a {
   display: block;
-  color: #f0f0f0;
+  color: #3b3b3b8c;
   padding: 1.5rem;
+  font-family:'Times New Roman', Times, serif;
   font-size: xx-large;
 }
 
 .nav-list a:hover {
-  background-color: #8c8c8d;
+  background-color: #da9873;
 }
 
 a {
@@ -56,8 +57,7 @@ a {
     to top,
     #a4dede,
     30%,
-    #fcadff
-  
+    #E0B399
   );
   height: 100vh;
   width: 100vw;
@@ -65,11 +65,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   font-size: 3rem;
+  color: white;
+  text-shadow: 4px 4px 4px #636262;
 }
 
 #welcome-section h3 {
   font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  color:gray;
+  text-shadow: none;
 }
 
 #projects {
@@ -79,12 +85,13 @@ a {
   width: 100vw;
   align-items: center;
   padding: 3rem 0;
-  background-color: #FCADFF;
+  background-color: #E0B399;
 }
 
 #projects h3 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  color: #000000;
+  color:white;
 }
 
 .projects-grid {
@@ -113,10 +120,15 @@ a {
   font-size: 2rem;
 }
 
-#contact h1,
-h4 {
+#contact h1 {
   padding-bottom: 2rem;
-  color: #000000;
+  color: white;
+  text-shadow: 4px 4px 4px #E0B399;
+  font-size: 4rem;
+}
+
+#contact p {
+  color: gray;
 }
 
 #contact div {
@@ -127,16 +139,17 @@ h4 {
 #contact div a {
   padding: 2rem;
   color: #ffffff;
-  text-shadow: 4px 4px 4px #1f1f1f;
+  text-shadow: 4px 4px 4px #E0B399;
   transition: transform 0.3s linear;
 }
 
 #contact div a:hover {
-  transform: translateY(7px);
+  transform: translateY(8px);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
   font-size: x-large;
+  color:rgb(209, 206, 206);
 }
