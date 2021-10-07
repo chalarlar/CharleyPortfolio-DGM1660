@@ -19,14 +19,14 @@ html {
 @media (max-width: 980px) {
   html {
     font-size: 40%;
-    color: aqua;
+    color: rgb(100, 160, 250);
   }
 }
 
 #navbar {
   width: 100%;
   position: fixed;
-  background-color: darkgreen;
+  background-color: #86b6b6;
 }
 
 .nav-list {
@@ -44,7 +44,7 @@ html {
 }
 
 .nav-list a:hover {
-  background-color: #12912e;
+  background-color: #8c8c8d;
 }
 
 a {
@@ -52,7 +52,12 @@ a {
 }
 
 #welcome-section {
-  background-color: burlywood;
+  background: linear-gradient(
+    to top,
+    rgb(27, 172, 216),
+    30%,
+    #a4dede
+  );
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -68,18 +73,23 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
-  background-color: aquamarine;
+  background-color: rgb(127, 255, 249);
 }
 
 #projects h3 {
   font-size: 3rem;
-  color: #12912e;
+  color: #000000;
 }
 
 .projects-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.projects-grid img {
+  width: 400px;
+  height: 250px;
 }
 
 .project-tile {
@@ -91,15 +101,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #dea5a4;
   height: 320px;
+  background-color: #a4dede;
   font-size: 2rem;
 }
 
 #contact h1,
 h4 {
   padding-bottom: 2rem;
-  color: #12912e;
+  color: #0c0c0c;
 }
 
 #contact div {
@@ -115,7 +125,7 @@ h4 {
 }
 
 #contact div a:hover {
-  transform: translateY(-8px);
+  transform: translateY(8px);
 }
 
 footer {
