@@ -1,7 +1,13 @@
-import { films } from '..delta/films.js'
+import { films } from '../data/films.js'
 
 let filmList = document.querySelector('#filmList')
 
-filmList.textContent = 'Helllo World!'
+let titleList = document.createElement('ol')
 
-console.log("Hello World!")
+filmList.appendChild(titleList)
+
+for (let i = 0; i < films.length; i++) {
+    let titleItem = document.createElement('li')
+    titleItem.textContent = films[i].title
+    titleList.appendChild(titleItem)
+}
