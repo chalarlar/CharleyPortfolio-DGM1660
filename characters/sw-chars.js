@@ -1,17 +1,20 @@
-import { people } from '../data/people.js'
+import { people } from "../data/people.js"
 
-const main = document.querySelector('#main')
+const main = document.querySelector("#main")
 
-people.forEach(element => {
-const personFig = document.createElement('figure')
-const personImg = document.createElement('img')
-personImg.src = `https://starwars-visualguide.com/assets/img/characters/1.jpg`
-const personCaption = document.createElement('figCaption')
-personCaption.textContent = 'Person name goes here'
+console.log(people.length)
 
-personFig.appendChild(personImg)
-personFig.appendChild(personCaption)
+people.forEach((element, index) => {
+  const personFig = document.createElement('figure')
+  const personImg = document.createElement('img')
+  personImg.src = `https://starwars-visualguide.com/assets/img/characters/${
+      index + 1
+  }.jpg`
+  const personCaption = document.createElement('figcaption')
+  personCaption.textContent = 'Person name goes here'
 
-main.appendChild(personFig)
-}
-)
+  personFig.appendChild(personImg)
+  personFig.appendChild(personCaption)
+
+  main.appendChild(personFig)
+})
