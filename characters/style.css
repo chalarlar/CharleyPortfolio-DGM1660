@@ -12,7 +12,7 @@ header {
 
 button {
     font-size: x-large;
-    background-color: blueviolet;
+    background-color: cadetblue;
     border-radius: 10px;
 }
 
@@ -25,8 +25,18 @@ main {
     flex-wrap: wrap;
 }
 
+img {
+    border: 8px solid rgb(252, 187, 90);
+}
+
 figure {
     margin: 8px;
+    background-color: cadetblue;
+}
+
+figcaption {
+    text-align: center;
+    font-size: x-large;
 }
 
 figure img {
