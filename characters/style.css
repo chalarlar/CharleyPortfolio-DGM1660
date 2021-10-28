@@ -17,7 +17,7 @@ button {
 }
 
 button:hover {
-    background-color: hotpink;
+    background-color: rgb(156, 215, 250);
 }
 
 main {
