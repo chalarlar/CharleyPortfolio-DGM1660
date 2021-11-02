@@ -4,14 +4,36 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(109, 241, 250);
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(89, 128, 236);
     padding: 2rem 0;
-    font-size: x-large;
+    font-size: xx-large;
+    text-align: center;
 }
 
-main {
+.mainContainer {
     display: flex;
-    flex: wrap;
+}
+
+.nav {
+    margin-left: 2em;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    background-color: cornsilk;
+    font-size: x-large;
+    text-align: center;
+}
+
+.shipName {
+    font-size: xx-large;
+    color: darkmagenta;
 }
