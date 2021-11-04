@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+}
+
+.senators {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    width: 160px;
+    height: 200px;
+}
