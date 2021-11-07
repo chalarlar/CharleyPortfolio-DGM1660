@@ -1,10 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    text-shadow: 4px 4px 4px black;
+}
+
 header {
     background-color: cadetblue;
-    color: #fff;
+    color: white;
+    padding: 2rem 0;
+    font-size: xxx-large;
+    text-align: center;
 }
 
 figure {
     background-color: cadetblue;
+    padding-bottom: 1rem;
 }
 
 img {
@@ -21,5 +31,4 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
 }
