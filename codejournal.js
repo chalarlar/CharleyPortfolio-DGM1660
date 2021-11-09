@@ -25,3 +25,5 @@ let filmURLS = [
 ];
 
 const filmLengths = filmURLS.map((filmURL) => filmURL.length);
+
+// Ternay operator syntax

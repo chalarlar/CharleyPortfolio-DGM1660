@@ -4,11 +4,13 @@
 }
 
 header {
-    font-family: 'Bebas Neue', cursive;
-    background-color: rgb(89, 128, 236);
+    font-family:fantasy;
+    background-color: rgb(7, 56, 192);
     padding: 2rem 0;
-    font-size: xx-large;
+    font-size: xxx-large;
     text-align: center;
+    color: ghostwhite;
+    text-shadow: 4px 4px 4px black;
 }
 
 .mainContainer {
@@ -36,4 +38,21 @@ section {
 .shipName {
     font-size: xx-large;
     color: darkmagenta;
+}
+
+a {
+    font-size: x-large;
+    color: rgb(0, 30, 121);
+}
+
+a:hover {
+    color: rgb(85, 1, 1);
+}
+
+li:hover {
+background-color: rgb(255, 20, 20);
+}
+
+a li {
+    background-color: rgb(100, 248, 167);
 }
