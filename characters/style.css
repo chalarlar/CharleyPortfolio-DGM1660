@@ -1,35 +1,34 @@
 * {
+    background-image: url("../images/starry\ sky.jpeg");
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(169, 250, 158);
 }
 
 header {
     display: flex;
     justify-content: space-around;
-    background-color: grey;
     padding: 2rem 0;
 }
 
 button {
-    font-size: x-large;
-    background-color: rgb(82, 255, 59);
+    font-family: fantasy;
+    color: turquoise;
+    font-size: xx-large;
     border-radius: 10px;
+    border-color: turquoise;
 }
 
 button:hover {
-    background-color: rgb(11, 139, 33);
-    color: white;
+    color: rgb(206, 204, 204);
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    text-shadow: 4px 4px 4px rgb(146, 146, 146);
 }
 
 img {
-    border: 8px solid rgb(19, 94, 0);
+    border: 8px solid turquoise;
 }
 
 figure {
@@ -37,9 +36,10 @@ figure {
 }
 
 figcaption {
-    background-color: rgb(241, 241, 241);
+    font-family: fantasy;
+    color: white;
     text-align: center;
-    font-size: x-large;
+    font-size: large;
 }
 
 figure img {
