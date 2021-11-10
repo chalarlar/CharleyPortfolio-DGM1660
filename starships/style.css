@@ -1,16 +1,17 @@
 * {
+    background-image: url("../images/starry\ sky.jpeg");
     margin: 0;
     box-sizing: border-box;
+
 }
 
 header {
-    font-family:fantasy;
-    background-color: rgb(7, 56, 192);
+    font-family: fantasy;
     padding: 2rem 0;
     font-size: xxx-large;
     text-align: center;
     color: ghostwhite;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 10px 10px 10px rgb(0, 110, 43);
 }
 
 .mainContainer {
@@ -27,32 +28,34 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    columns: 2;
 }
 
 .box {
-    background-color: cornsilk;
-    font-size: x-large;
+    color: white;
+    font-size: xx-large;
     text-align: center;
 }
 
 .shipName {
     font-size: xx-large;
-    color: darkmagenta;
+    color: white;
+    text-shadow: rgb(3, 139, 55);
 }
 
 a {
     font-size: x-large;
-    color: rgb(0, 30, 121);
+    color: rgb(3, 139, 55);
 }
 
 a:hover {
-    color: rgb(85, 1, 1);
+    color: rgb(73, 112, 230);
 }
 
-li:hover {
-background-color: rgb(255, 20, 20);
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: rgb(163, 148, 119);
 }
 
-a li {
-    background-color: rgb(100, 248, 167);
-}
