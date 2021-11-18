@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: blue;
+    background-color: rgb(136, 136, 136);
     text-align: center;
     font-size: xx-large;
     color: white;
@@ -22,6 +22,15 @@ button:hover {
     color: brown;
 }
 
+main {
+    background: linear-gradient(
+        to right,
+        #ff4545,
+        50%,
+        #4460ff
+      );
+}
+
 .senators {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +38,7 @@ button:hover {
 }
 
 img {
-    border: 10px solid rgb(90, 160, 252);
+    border: 10px solid rgb(136, 136, 136);
 }
 
 figure {
@@ -43,7 +52,7 @@ figcaption {
     font-size: large;
     text-align: center;
     text-shadow: 4px 4px 4px grey;
-    background-color: rgb(252, 166, 166);
+    background-color: rgb(199, 199, 199);
 }
 
 footer {
