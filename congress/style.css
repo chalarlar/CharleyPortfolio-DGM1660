@@ -6,11 +6,30 @@
 header {
     background-color: blue;
     text-align: center;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    padding: 1rem;
+}
+
+button {
+    color: blueviolet;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: brown;
 }
 
 .senators {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    border: 10px solid rgb(90, 160, 252);
 }
 
 figure {
@@ -21,7 +40,10 @@ figure {
 }
 
 figcaption {
+    font-size: large;
     text-align: center;
+    text-shadow: 4px 4px 4px grey;
+    background-color: rgb(252, 166, 166);
 }
 
 footer {
