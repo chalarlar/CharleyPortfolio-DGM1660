@@ -11,6 +11,7 @@ async function getAPIData(url) {
 getAPIData(`https://pokeapi.co/api/v2/pokemon/snorlax`)
 .then((data) => {
     console.log(data)
+    populatePokeCards(data)
 })
 
 const pokeGrid = document.querySelector('.pokeGrid')
