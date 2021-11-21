@@ -1,34 +1,29 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(185, 185, 185);
 }
 
 header {
-    background-color: rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     font-size: xx-large;
     color: white;
     text-shadow: 4px 4px 4px black;
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
 button {
-    color: blueviolet;
+    background-color: blanchedalmond;
     font-size: medium;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
 }
 
 button:hover {
-    color: brown;
-}
-
-main {
-    background: linear-gradient(
-        to right,
-        #ff4545,
-        50%,
-        #4460ff
-      );
+    background-color: brown;
+    color: rgb(255, 255, 255);
 }
 
 .senators {
@@ -38,7 +33,7 @@ main {
 }
 
 img {
-    border: 10px solid rgb(136, 136, 136);
+    border: 10px solid rgb(223, 33, 33);
 }
 
 figure {
@@ -49,12 +44,13 @@ figure {
 }
 
 figcaption {
+    font-family:serif;
     font-size: large;
     text-align: center;
-    text-shadow: 4px 4px 4px grey;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(86, 133, 202);
+    border: 1px solid black;
 }
 
 footer {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }

@@ -75,3 +75,4 @@ biggestWeasels.forEach(weasel => {
     listItem.textContent = weasel.name
     weaselOrderedList.appendChild(listItem)
 })
+
