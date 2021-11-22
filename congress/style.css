@@ -53,4 +53,7 @@ figcaption {
 
 footer {
     margin-bottom: .5rem;
+    margin-left: .5rem;
+    color: rgb(129, 129, 129);
+    font-size: small;
 }

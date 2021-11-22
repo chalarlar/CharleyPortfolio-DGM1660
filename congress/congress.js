@@ -26,6 +26,7 @@ function simplifiedMembers(chamberFilter) {
     })
 }
 
+
 populateSenatorDiv(simplifiedMembers())
 
 function populateSenatorDiv(simpleSenators) {
@@ -42,6 +43,11 @@ function populateSenatorDiv(simpleSenators) {
         senatorDiv.appendChild(senFigure)
     })
 }
+
+const allButton = document.createElement('button')
+allButton.textContent = 'All members'
+allButton.addEventListener('click', () => populateDOM(members))
+mainHeader.appendChild(allMembers)
 
 //const filterSenators = (prop, value) => simplifiedSenators().filter(senator => senator[prop] === value)
 
