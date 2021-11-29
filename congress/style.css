@@ -1,29 +1,36 @@
 * {
     margin: 0;
-    box-sizing: border-box;
-    background-color: rgb(185, 185, 185);
+    box-sizing: border-box;;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
+    background-color: rgb(88, 88, 88);
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
     color: white;
     text-shadow: 4px 4px 4px black;
-    padding: 2rem 0;
+    padding: 1rem 0;
+}
+
+main {
+    background-color: rgb(185, 185, 185);
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem 0;
 }
 
 button {
-    background-color: blanchedalmond;
-    font-size: medium;
+    background-color: rgb(226, 226, 226);
+    font-size: large;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
+    transition: transform 0.3s linear
 }
 
 button:hover {
-    background-color: brown;
+    background-color: rgb(0, 17, 255);
     color: rgb(255, 255, 255);
+    transform: translateY(4px);
 }
 
 .senators {
