@@ -45,7 +45,8 @@ html {
 }
 
 .nav-list a:hover {
-  background-color: #da9873;
+  background-color: gray;
+  color: white;
 }
 
 a {
@@ -92,6 +93,7 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color:white;
+  text-shadow: 4px 4px 4px #a4dede;
 }
 
 .projects-grid {
@@ -107,6 +109,13 @@ a {
 
 .project-tile {
   margin: 2rem;
+}
+
+figcaption {
+  font-size: x-large;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 4px #a4dede;
 }
 
 #contact {
