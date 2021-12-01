@@ -3,9 +3,18 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: aqua;
+    text-align: center;
+    font-family: monospace;
+    font-size: xxx-large;
+    padding: 1rem;
+}
+
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .scene {
