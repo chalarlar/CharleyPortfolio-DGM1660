@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(255, 87, 87);
     text-align: center;
     font-family: monospace;
     font-size: xxx-large;
@@ -15,6 +15,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url(../images/pokemonback.jfif);
+}
+
+.pokeGrid background-image {
+    size: 100%;
 }
 
 .scene {
@@ -55,7 +60,7 @@ header {
 
 figcaption {
     text-align: center;
-    font-family: fantasy;
+    font-family: monospace;
     font-size: x-large;
 }
 

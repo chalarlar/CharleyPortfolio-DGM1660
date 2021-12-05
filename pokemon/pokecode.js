@@ -26,7 +26,7 @@ const pokeGrid = document.querySelector(".pokeGrid");
 const loadButton = document.querySelector(".loadPokemon");
 loadButton.addEventListener("click", () => {
   removeChildren(pokeGrid);
-  loadPokemon(100, 5);
+  loadPokemon(300, 25);
 });
 
 const moreButton = document.querySelector('.morePokemon')
