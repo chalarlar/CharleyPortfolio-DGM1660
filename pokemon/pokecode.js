@@ -26,7 +26,7 @@ const pokeGrid = document.querySelector(".pokeGrid");
 const loadButton = document.querySelector(".loadPokemon");
 loadButton.addEventListener("click", () => {
   removeChildren(pokeGrid);
-  loadPokemon(300, 25);
+  loadPokemon(100, 25);
 });
 
 const moreButton = document.querySelector('.morePokemon')
@@ -159,8 +159,11 @@ function getPokeTypeColor(pokeType) {
         case 'psychic': 
         color = '#FF5685'
         break
+        case 'ground':
+          color = '#890000'
+        break
         default:
-            color = '#888888'
+            color = '#888811'
     }
     return color
 }
