@@ -26,15 +26,16 @@ button:hover {
     transform: translateY(4px);
 }
 
+body {
+    background-image: url(/images/pokemonback.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(../images/pokemonback.jfif);
-}
-
-.pokeGrid background-image {
-    size: 100%;
 }
 
 .scene {
@@ -76,6 +77,7 @@ button:hover {
 }
 
 figcaption {
+    text-transform: capitalize;
     text-align: center;
     font-family: monospace;
     font-size: x-large;
