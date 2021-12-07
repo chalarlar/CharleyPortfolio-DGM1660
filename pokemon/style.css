@@ -4,11 +4,26 @@
 }
 
 header {
-    background-color: rgb(255, 87, 87);
+    background-color: rgb(151, 150, 150);
+    color: rgb(157, 255, 128);
     text-align: center;
     font-family: monospace;
     font-size: xxx-large;
     padding: 1rem;
+    text-shadow: 4px 4px 4px black;
+}
+
+button {
+    color: rgb(0, 0, 255);
+    font-size: medium;
+    border-radius: 10%;
+    background-color: rgb(226, 226, 226);
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(255, 102, 255);
+    transform: translateY(4px);
 }
 
 .pokeGrid {
@@ -36,6 +51,7 @@ header {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+   
 }
 
 .cardFace {
@@ -43,6 +59,7 @@ header {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 10px;
 }
 
 .card.is-flipped {
