@@ -72,8 +72,13 @@ body {
 }
 
 .back {
-    background: cornflowerblue;
+    background: rgb(218, 229, 248);
     transform: rotateY(180deg)
+}
+
+figure img {
+    width: 200px;
+    height: 200px;
 }
 
 figcaption {
@@ -83,17 +88,17 @@ figcaption {
     font-size: x-large;
 }
 
-figure img {
-    width: 200px;
-    height: 200px;
-}
-
 h4 {
     text-align: center;
     font-size: large;
     padding: .5rem;
 }
 
-ul {
+ol {
     font-size: large;
+}
+
+ul {
+    font-size: medium;
+    
 }
