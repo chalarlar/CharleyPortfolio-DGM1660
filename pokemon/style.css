@@ -4,13 +4,13 @@
 }
 
 header {
-    background-color: rgb(151, 150, 150);
-    color: rgb(157, 255, 128);
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: monospace;
     font-size: xxx-large;
     padding: 1rem;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 8px 8px 8px rgb(0, 26, 255);
 }
 
 button {
@@ -21,21 +21,27 @@ button {
 }
 
 button:hover {
-    color: white;
-    background-color: rgb(255, 102, 255);
-    transform: translateY(4px);
+    color: black;
+    background-color: rgb(171, 255, 102);
+    transform: translateX(4px);
 }
 
 body {
-    background-image: url(/images/pokemonback.jfif);
+    background-image: url(../images/background2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    
+    background-size: 100%;
+}
+
+body.background-image {
+    opacity: 100%;
 }
 
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .scene {
@@ -73,7 +79,10 @@ body {
 
 .back {
     background: rgb(218, 229, 248);
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 figure img {
@@ -90,15 +99,36 @@ figcaption {
 
 h4 {
     text-align: center;
-    font-size: large;
-    padding: .5rem;
+    font-size: xx-large;
+    font-family:monospace;
+    color:black;
+}
+
+h3 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    color: cadetblue;
 }
 
 ol {
-    font-size: large;
+    font-size: x-large;
+    font-family: monospace;
 }
 
 ul {
+    font-size: large;
+    font-family: monospace;
+    color: gray;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
     font-size: medium;
-    
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
 }

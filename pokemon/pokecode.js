@@ -77,14 +77,14 @@ moreButton.addEventListener('click', () => {
 const newButton = document.querySelector('.newPokemon');
 newButton.addEventListener('click', () => {
   let pokeName = prompt("What is the name of your new Pokemon?")
-  let pokeAbilities = prompt(
-    "What are your Pokemon' abilities? (use commas to seperate items"
-  )
+  let pokeAbilities = prompt("What are your Pokemon' abilities? (use commas to seperate the items)")
   let pokeTypes = prompt("What type of Pokemon is it? Please indicate no more than 2 types seperated by a comma (ex: grass, electric)")
+  let pokeHP = prompt("What is your pokemon's HP?")
   let newPokemon = new Pokemon(
     pokeName,
     getAbilitiesArray(pokeAbilities),
-    getTypesArray(pokeTypes)
+    getTypesArray(pokeTypes),
+    pokeHP
   )
   populatePokeCard(newPokemon)
 })
@@ -112,11 +112,12 @@ function getTypesArray(commaString) {
 }
 
 class Pokemon {
-  constructor(name, abilities, types) {
+  constructor(name, abilities, types, HP) {
     ;(this.id = 9001),
       (this.name = name),
       (this.abilities = abilities),
-      (this.types = types)
+      (this.types = types),
+      (this.HP = HP)
   }
 }
 
@@ -219,7 +220,7 @@ function populateCardBack(pokemon) {
     pokeHP.textContent = `HP: ${pokemon.stats[0].base_stat}`
     pokeBack.appendChild(pokeHP)
   }
-  const label = document.createElement('h4')
+  const label = document.createElement('h3')
   label.textContent = 'Abilities:'
   pokeBack.appendChild(label)
   const abilityList = document.createElement('ol')
