@@ -74,6 +74,12 @@ moreButton.addEventListener('click', () => {
     loadPokemon(offset, limit)
 })
 
+const chooseButton = document.querySelector('.choosePokemon')
+chooseButton.addEventListener('click', () => {
+    let chooseName = prompt("Which pokemon are you looking for?")
+    loadPokemon(pokeName)
+})
+
 const newButton = document.querySelector('.newPokemon');
 newButton.addEventListener('click', () => {
   let pokeName = prompt("What is the name of your new Pokemon?")

@@ -20,3 +20,21 @@ for (let i = 0; i < films.length; i++) {
     
     filmList.appendChild(figure)
 }
+
+function populateFilmCard(film) {
+    const swPoster = document.createElement('div')
+    swPoster.className = 'poster'
+    const filmCard = document.createElement('div')
+    filmCard.className = 'card'
+    filmCard.addEventListener('click', () =>
+      filmCard.classList.toggle('is-flipped'),
+    )
+  
+    const front = populateCardFront(film)
+    const back = populateCardBack(film)
+  
+    filmCard.appendChild(front)
+    filmCard.appendChild(back)
+    swPoster.appendChild(filmCard)
+    filmGrid.appendChild(swPoster)
+  }
