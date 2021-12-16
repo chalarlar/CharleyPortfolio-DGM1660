@@ -20,15 +20,12 @@ function loadPokemon(offset = 0, limit = 25) {
   });
 }
 
-function loadPokemonByName(name) {
-  getAPIData(
-    `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
-  ).then(async (data) => {
-    for (const pokemon of data.results) {
-      await getAPIData(pokemon.url).then((pokeData) =>
-        populatePokeCard(pokeData)
-      );
-    }
+function loadPokemonByNameAgain(name) {
+  removeChildren(pokeGrid);
+    getAPIData(
+    `https://pokeapi.co/api/v2/pokemon/${name}`
+  ).then(async (data) => { 
+    populatePokeCard(data)
   });
 }
 
@@ -87,9 +84,10 @@ moreButton.addEventListener('click', () => {
 })
 
 const chooseButton = document.querySelector('.choosePokemon')
+
 chooseButton.addEventListener('click', () => {
     let chooseName = prompt("Which pokemon are you looking for?")
-    loadPokemonByName(pokeData.name)
+    loadPokemonByNameAgain(chooseName)
 })
 
 const newButton = document.querySelector('.newPokemon');
@@ -180,7 +178,6 @@ function populateCardFront(pokemon) {
 function typesBackground(pokemon, card) {
     let pokeType1 = pokemon.types[0].type.name
     let pokeType2 = pokemon.types[1]?.type.name
-    //console.log(pokeType1, pokeType2)
     if(!pokeType2) {
       card.style.setProperty('background', getPokeTypeColor(pokeType1))
     } else {
