@@ -20,6 +20,18 @@ function loadPokemon(offset = 0, limit = 25) {
   });
 }
 
+function loadPokemonByName(name) {
+  getAPIData(
+    `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
+  ).then(async (data) => {
+    for (const pokemon of data.results) {
+      await getAPIData(pokemon.url).then((pokeData) =>
+        populatePokeCard(pokeData)
+      );
+    }
+  });
+}
+
 const pokeGrid = document.querySelector('.pokeGrid');
 const loadButton = document.querySelector('.loadPokemon');
 loadButton.addEventListener('click', () => {
@@ -77,7 +89,7 @@ moreButton.addEventListener('click', () => {
 const chooseButton = document.querySelector('.choosePokemon')
 chooseButton.addEventListener('click', () => {
     let chooseName = prompt("Which pokemon are you looking for?")
-    loadPokemon(pokeName)
+    loadPokemonByName(pokeData.name)
 })
 
 const newButton = document.querySelector('.newPokemon');

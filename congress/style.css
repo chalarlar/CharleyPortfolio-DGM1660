@@ -33,7 +33,7 @@ button:hover {
     transform: translateY(4px);
 }
 
-.senators {
+.members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

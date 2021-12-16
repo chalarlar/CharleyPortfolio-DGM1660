@@ -1,11 +1,12 @@
 import { senators } from '../data/senators.js'
 import { representatives } from '../data/representatives.js'
 
+const main = document.querySelector('#main')
+
 const members = [...senators, ...representatives]
 
-const senatorDiv = document.querySelector('.senators')
-const seniorityHeading = document.querySelector('.seniority')
-const weaselOrderedList = document.querySelector('.weaselList')
+const senatorDiv = document.querySelector('.members')
+
 
 function simplifiedMembers(chamberFilter) {
     const filteredArray = members.filter(member => chamberFilter ? member.short_title === chamberFilter : member)
@@ -44,41 +45,25 @@ function populateSenatorDiv(simpleSenators) {
     })
 }
 
-const allButton = document.createElement('button')
-allButton.textContent = 'All members'
-allButton.addEventListener('click', () => populateDOM(members))
-mainHeader.appendChild(allMembers)
 
-//const filterSenators = (prop, value) => simplifiedSenators().filter(senator => senator[prop] === value)
 
-//const republicans = filterSenators('party', 'R')
-//const femaleSenators = filterSenators('gender', 'F')
 
-//console.log(republicans, femaleSenators)
 
-const MostSeniorMember = simplifiedMembers().reduce((acc, senator) => {
-    return acc.seniority > senator.seniority ? acc : senator
-})
-
-seniorityHeading.textContent = `The most senior member of congress is ${MostSeniorMember.name} for ${mostSeniorSenator.seniority} years`
-
-const mostLoyal = simplifiedMembers().reduce((acc, senator) => {
-    if(senator.loyaltyPct === 100) {
-        acc.push(senator)
-    }
-    return acc
-}, [])
-
-const biggestWeasel = simplifiedMembers().reduce((acc, senator) => 
-(acc.missedVotesPct || 0) > senator.missedVotesPct ? acc : senator, {})
-
-const biggestWeasels = simplifiedMembers().filter(senator => senator.missedVotesPct >= 50)
-
-console.log(biggestWeasels)
-
-biggestWeasels.forEach(weasel => {
-    let listItem = document.createElement('li')
-    listItem.textContent = weasel.name
-    weaselOrderedList.appendChild(listItem)
-})
-
+function populateDOM(members) {
+    // remove all previous items before populating with new ones
+  removeChildren(main)
+  
+  characters.forEach((element) => {
+    const memberFig = document.createElement('figure')
+    const personImg = document.createElement('img')
+    let memberID = getLastNumber(element.url)
+    personImg.src = `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`
+    const memberCaption = document.createElement('figcaption')
+    memberCaption.textContent = element.name
+  
+    memberFig.appendChild(personImg)
+    memberFig.appendChild(memberCaption)
+  
+    main.appendChild(memberFig)
+  })
+  }
