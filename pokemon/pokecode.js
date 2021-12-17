@@ -62,12 +62,6 @@ function getAllPokemonByType(type) {
   return allPokemon.filter((pokemon) => pokemon.types[0].type.name == type)
 }
 
-const sortButton = document.querySelector('.sortPokemon')
-sortButton.addEventListener('click', () => {
-  const allByType = getAllPokemonByType('water')
-  allByType.forEach((item) => populatePokeCard(item))
-})
-
 const typeSelector = document.querySelector('#typeSelector')
 typeSelector.addEventListener('change', (event) => {
   const usersTypeChoice = event.target.value.toLowerCase()
@@ -86,8 +80,11 @@ moreButton.addEventListener('click', () => {
 const chooseButton = document.querySelector('.choosePokemon')
 
 chooseButton.addEventListener('click', () => {
+    const usersNameChoiceAgain = event.target.value.toLowerCase()
+    const pokemonByName = loadPokemonByNameAgain(usersNameChoiceAgain)
     let chooseName = prompt("Which pokemon are you looking for?")
     loadPokemonByNameAgain(chooseName)
+    pokemonByName.forEach((item) => populatePokeCard(item))
 })
 
 const newButton = document.querySelector('.newPokemon');

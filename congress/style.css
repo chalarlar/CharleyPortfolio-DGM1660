@@ -1,30 +1,39 @@
 * {
-    margin: 0;
-    box-sizing: border-box;;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: rgb(88, 88, 88);
     text-align: center;
+    background-color: rgb(88, 88, 88);
     font-size: xxx-large;
     color: white;
     text-shadow: 4px 4px 4px black;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
-main {
-    background-color: rgb(185, 185, 185);
+h1 {
     text-align: center;
-    justify-content: space-around;
-    padding: 1rem 0;
+}
+
+h2 {
+    font-size: large;
+    padding: .5rem;
+    text-align: center;
+}
+
+.weaselList {
+    font-size: medium;
+    text-align: start;
 }
 
 button {
     background-color: rgb(226, 226, 226);
     font-size: large;
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
-    transition: transform 0.3s linear
+    border-color: rgba(255, 2, 2, 0.911);
+    transition: transform 0.3s linear;
+    padding: .5rem;
 }
 
 button:hover {
@@ -33,7 +42,17 @@ button:hover {
     transform: translateY(4px);
 }
 
-.members {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(185, 185, 185);
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem, 0;
+}
+
+.senators {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,4 +82,5 @@ footer {
     margin-left: .5rem;
     color: rgb(129, 129, 129);
     font-size: small;
+    text-align: center;
 }
